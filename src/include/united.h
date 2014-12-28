@@ -1,5 +1,9 @@
-#ifndef THEME_H
-#define THEME_H
+#ifndef UNITED_H
+#define UNITED_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 typedef enum {
     ELEMENT_UNKNOWN,
@@ -59,4 +63,8 @@ typedef struct {
 
 unsigned char *draw_primitive(element_t element, int state, params_t params);
 
-#endif // THEME_H
+#ifdef __cplusplus
+} // extern "C"
+#endif
+
+#endif // UNITED_H

@@ -1,6 +1,6 @@
-#include "theme.h"
-
 #include <cairo/cairo-svg.h>
+
+#include <united.h>
 
 unsigned char *draw_primitive(element_t element, int state, params_t params)
 {

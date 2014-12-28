@@ -30,6 +30,9 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
+# Qt MOC files
+moc_*
+
 # Temporary Files
 *~
 *.swp
