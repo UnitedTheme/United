@@ -61,7 +61,9 @@ typedef struct {
     int height;
 } params_t;
 
-unsigned char *draw_primitive(element_t element, int state, params_t params);
+unsigned char *(*draw_primitive)(element_t element, int state, params_t params);
+
+void united_init();
 
 #ifdef __cplusplus
 } // extern "C"
