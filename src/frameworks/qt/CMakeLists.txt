@@ -21,9 +21,6 @@ include_directories(../../include)
 # build qt4 style plugin
 find_package(Qt4)
 
-include(${QT_USE_FILE})
-add_definitions(${QT_DEFINITIONS})
-
 add_library(united-qt4 SHARED ${united-qt_SOURCES})
 target_link_libraries(united-qt4 Qt4::QtGui)
 
