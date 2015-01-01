@@ -28,7 +28,7 @@ int load_theme(const char *name)
 
     dlerror();
 
-    *(unsigned char **) (&draw_primitive) = dlsym(handle, "draw_primitive");
+    *(unsigned char **) (&draw_primitive) = dlsym(handle, "theme_draw_primitive");
 
     return 0;
 }

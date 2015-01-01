@@ -2,7 +2,7 @@
 
 #include <united.h>
 
-unsigned char *draw_primitive(element_t element, int state, params_t params)
+unsigned char *theme_draw_primitive(element_t element, int state, params_t params)
 {
     cairo_t *cr;
     cairo_surface_t *surface;
