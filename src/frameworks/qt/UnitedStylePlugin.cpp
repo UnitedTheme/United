@@ -14,5 +14,5 @@ QStyle *UnitedStylePlugin::create(const QString &key)
 }
 
 #if QT_VERSION < 0x050000
-Q_EXPORT_PLUGIN2(UnitedStyle, UnitedStylePlugin)
+Q_EXPORT_PLUGIN2(United, UnitedStylePlugin)
 #endif // QT_VERSION < 0x050000

@@ -21,7 +21,7 @@ class UnitedStyle : public QCommonStyle
     Q_OBJECT
 
 public:
-    UnitedStyle() {};
+    UnitedStyle();
 
     void drawPrimitive(PrimitiveElement element, const QStyleOption *option,
                        QPainter *painter, const QWidget *widget) const;

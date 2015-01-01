@@ -2,6 +2,11 @@
 
 #include "UnitedStyle.h"
 
+UnitedStyle::UnitedStyle()
+{
+    united_init();
+}
+
 void UnitedStyle::drawPrimitive(PrimitiveElement element, const QStyleOption *option,
                              QPainter *painter, const QWidget *widget) const
 {
