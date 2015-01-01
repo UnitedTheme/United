@@ -1,10 +1,6 @@
-cmake_minimum_required(VERSION 2.8.10.2)
+cmake_minimum_required(VERSION 2.8)
 
 project(united-qt)
-
-find_package(Qt4 REQUIRED)
-
-include_directories(../../include)
 
 set(united-qt_SOURCES
     UnitedStyle.cpp
@@ -16,11 +12,24 @@ set(united-qt_HEADERS
     UnitedStylePlugin.h
 )
 
-QT4_WRAP_CPP(united-qt_HEADERS_MOC ${united-qt_HEADERS})
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+# libunited headers
+include_directories(../../include)
+
+# build qt4 style plugin
+find_package(Qt4)
 
 include(${QT_USE_FILE})
 add_definitions(${QT_DEFINITIONS})
 
-add_library(united-qt SHARED ${united-qt_SOURCES} ${united-qt_HEADERS_MOC})
-target_link_libraries(united-qt ${QT_LIBRARIES})
+add_library(united-qt4 SHARED ${united-qt_SOURCES})
+target_link_libraries(united-qt4 Qt4::QtGui)
 
+# build qt5 style plugin
+find_package(Qt5Core)
+find_package(Qt5Widgets)
+
+add_library(united-qt5 SHARED ${united-qt_SOURCES})
+target_link_libraries(united-qt5 Qt5::Widgets)
