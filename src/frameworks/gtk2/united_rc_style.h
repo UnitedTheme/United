@@ -4,6 +4,7 @@
 #include <gtk/gtk.h>
 
 #define UNITED_TYPE_RC_STYLE united_rc_style_get_type()
+#define UNITED_RC_STYLE(object) G_TYPE_CHECK_INSTANCE_CAST((object), UNITED_TYPE_RC_STYLE, UnitedRcStyle)
 
 typedef struct
 {

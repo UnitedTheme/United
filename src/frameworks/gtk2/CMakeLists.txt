@@ -7,7 +7,10 @@ set(SOURCES
     united_style.c
     united_rc_style.c
     united_theme_main.c
+    cairo-support.c
 )
+
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -DDEBUG")
 
 # libunited headers
 include_directories(../../include)
