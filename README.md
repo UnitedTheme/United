@@ -8,5 +8,7 @@ It's also easier to create themes -- you just do it once!
 Architecture
 ============
 
+![United Architecture](https://github.com/UnitedTheme/United/raw/master/img/architecture.png "United Architecture")
+
 Every GUI Toolkit library have it's own shared library for theming.
 In Qt it's called "Qt Plugin", in GTK it's called "Engine". All of them asks libUnited for bitmap with certain parameters. libUnited "redirects" request for themeloader (what can be single theme, or full "engine" similar to gtk engines or to QtCurve which has it's own subthemes). Then themeloader draws control and finally returns bitmap to Qt/GTK/anything
