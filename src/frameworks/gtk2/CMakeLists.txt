@@ -4,7 +4,8 @@ project(united-gtk2)
 
 set(SOURCES
     united_draw.c
-    united_theme.c
+    united_style.c
+    united_rc_style.c
     united_theme_main.c
 )
 

@@ -1,6 +1,6 @@
 #include <gtk/gtk.h>
 
-#include "united_theme.h"
+#include "united_style.h"
 #include "united_draw.h"
 
 G_DEFINE_DYNAMIC_TYPE(UnitedStyle, united_style, GTK_TYPE_STYLE)
