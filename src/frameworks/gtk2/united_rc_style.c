@@ -11,7 +11,6 @@ void united_rc_style_register_types(GTypeModule *module)
 
 static void united_rc_style_init(UnitedRcStyle *rc)
 {
-    printf("united_rc_style_init();\n");
 }
 
 static void united_rc_style_class_init(UnitedRcStyleClass *this)
