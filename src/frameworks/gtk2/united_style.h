@@ -14,5 +14,6 @@ typedef struct
 } UnitedStyleClass;
 
 G_GNUC_INTERNAL void united_style_register_types(GTypeModule *module);
+G_GNUC_INTERNAL GType united_style_get_type(void);
 
 #endif // UNITED_THEME_H
