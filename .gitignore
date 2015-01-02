@@ -32,6 +32,7 @@ Makefile
 
 # Qt MOC files
 moc_*
+*_automoc.cpp
 
 # Temporary Files
 *~
