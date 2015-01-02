@@ -1,10 +1,15 @@
 #include <gmodule.h>
 #include <gtk/gtk.h>
 
+#include <united.h>
+
+#include "united_style.h"
 #include "united_rc_style.h"
 
 void theme_init(GTypeModule *module)
 {
+    united_init();
+
     united_rc_style_register_types(module);
     united_style_register_types(module);
 }
