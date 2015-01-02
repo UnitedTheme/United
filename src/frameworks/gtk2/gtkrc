@@ -2,3 +2,5 @@ style "default" {
     engine "united" {
     }
 }
+
+class "GtkWidget" style "default"
